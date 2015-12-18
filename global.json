@@ -1,0 +1,46 @@
+{
+    "docs_directory": "docs",
+    "themes_directory": "themes",
+
+    "title": "LuzIA Docs",
+    "tagline": "Documentación de productos de LuzIA",
+    "author": "LuzIA Team",
+    "image": "",
+    "languages": {},
+
+    "format": "html",
+    "processor": "",
+
+    "ignore": {
+        "files": [],
+        "folders": []
+    },
+
+    "timezone": "America/Argentina/Buenos_Aires",
+
+    "live": {
+        "inherit_index": false,
+        "clean_urls": false
+    },
+
+    "html": {
+        "theme": "daux-blue",
+        "breadcrumbs": false,
+        "toggle_code": false,
+        "date_modified": false,
+        "float": false,
+
+        "repo": "",
+        "twitter": [],
+        "links": {
+        },
+
+        "google_analytics": false,
+        "piwik_analytics": false,
+        "piwik_analytics_id": "0"
+    },
+
+    "confluence": {
+        "prefix": ""
+    }
+}
