@@ -11,7 +11,7 @@ A continuación se explican las configuraciones para poder levantar y ejecutar c
 >* JBoss 6.2
 >* Maven 3.x
 >
->Para poder configurar estos requisitos debería remitirse al [documento Principal](./README.md#instalacion) de configuración
+>Para poder configurar estos requisitos debería remitirse al [documento Principal](./install#instalacion) de configuración
 
 
 #### Índice de contenido
