@@ -10,7 +10,7 @@ El lector de Pathfinder es el encargado de leer el archivo específico donde se 
 >Para poder configurar estos requisitos debería remitirse al [documento Principal](./Instalación_de_entorno#instalacion) de configuración
 
 
-#### Índice de contenido
+### Índice de contenido
 
 - [Configuración del Agente Lector](#configuracion_reader)
 - [Ejecución del Agente Lector](#configuracion_app)
@@ -50,7 +50,7 @@ El directorio de ejecución se configura por parámetro de ejecución al correr 
 Como vimos anteriormente el agente puede ejecutarse directamente sin crear configuraciones si el mismo se ejecuta en el mismo servidor de Pathfinder. Vamos a proceder a detallar los dos métodos de ejecución.
 
 <a name="params"></a>
-#### Parámetros posibles para configurar el agente por comando
+### Parámetros posibles para configurar el agente por comando
 
 El agente recibe distintos parámetros de configuración por línea de comando, a continuación se detallan:
 
@@ -65,7 +65,7 @@ El agente recibe distintos parámetros de configuración por línea de comando, 
 |**-hc**|Contexto del Health Pathfinder, Se matchea con la propiedad `configuration.health.url.context`|
 
 <a name="ejecucion_misma"></a>
-#### Ejecución en misma máquina
+### Ejecución en misma máquina
 Si el agente lector corre sobre el mismo servidor donde corre Pathfinder el comando para ejecutarlo es el siguiente (se utilizará el directorio de trabajo establecido en la sección "<<configuracion_reader>>"):
 
 ``` 
@@ -73,7 +73,7 @@ Si el agente lector corre sobre el mismo servidor donde corre Pathfinder el coma
 ```
 
 <a name="ejecucion_diferente"></a>
-#### Ejecución en diferente máquina
+### Ejecución en diferente máquina
 Si el agente lector corre sobre el mismo servidor donde corre Pathfinder el comando para ejecutarlo es el siguiente:
 
 ```
@@ -81,6 +81,6 @@ Si el agente lector corre sobre el mismo servidor donde corre Pathfinder el coma
 ```
 
 <a name="ejecucion_gral"></a>
-#### Puesta en marcha de una datasource
+### Puesta en marcha de una datasource
 Iniciar el agente solo hace que el mismo registre en la Plataforma pero no comienza a enviar eventos. <br>
 Para que los eventos comiencen a ser enviados a Pathfinder es necesario ingresar a Pathfinder a la sección de *Agentes* y registrar en el Agente registrado una nueva datasource, donde se especificará el path completo al archivo de eventos. Habiendo hecho esto, aparecerá el botón On/Off para poder comenzar el envío de eventos

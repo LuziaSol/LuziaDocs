@@ -11,7 +11,7 @@ El analizador de Pathfinder es una aplicación standalone que se comunica via se
 >
 >Para poder configurar estos requisitos debería remitirse al [documento Principal](./Instalación_de_entorno#instalacion) de configuración
 
-#### Índice de contenido
+### Índice de contenido
 
 - [Configuración JBoss](#conf_an_jboss)
 - [Configuración Pathfinder](#conf_an_app)

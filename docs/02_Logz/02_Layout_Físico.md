@@ -55,9 +55,9 @@ Para lograr el UPTIME propuesto es recomendable que sea al menos dos servidores.
 
 El repositorio de datos se divide en los siguientes nodos:
 
-####**MASTER**
+###**MASTER**
 Nodo que maneja todas las transacciones que solicitan datos, distribuye y balancea los datos que se almacenan en los nodos DATA. Necesita más capacidad de procesamiento que memoria RAM o capacidad de almacenamiento.
-####**DATA**
+###**DATA**
 Nodo que almacena datos y responde a requests de búsqueda de datos que realiza el nodo MASTER. También realiza todos los cacheos necesarios para disminuir el tiempo de respuesta. Necesita más memoria RAM y capacidad de almacenamiento que capacidad de procesamiento.
 
 >TIP: Un nodo MASTER/DATA necesitará mucha RAM y buena capacidad de procesamiento.

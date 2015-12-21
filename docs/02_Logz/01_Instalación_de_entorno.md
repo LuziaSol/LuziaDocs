@@ -1,15 +1,5 @@
-# PATHFINDER
-
------------------------------------------
-
-Aplicativo Interceptor y Analizador de Eventos 
-
-Pathfinder es un aplicativo inicialmente pensado para recibir instancias de eventos que suceden, almacenarlos y procesarlos aplicando una lógica establecida por el usuario mediante una interfaz simple de codificación JavaScript.
-Los eventos se reciben vía una interfaz de servicios Web REST, y se almacenan en una base de datos NoSql para luego ser procesados. 
-Pueden consultarse los eventos mediante la misma interfaz de servicios WEB y generarse opcionalmente archivos de ontologías en base a las búsquedas realizadas para aplicar posterior lógica de procesamiento. 
-
 <a name="index"></a>
-## OBJETIVO y ESTRUCTURA
+# OBJETIVO y ESTRUCTURA
 
 Este documento se divide en 2 secciones: 
 
@@ -21,7 +11,7 @@ Explica como configurar correctamente Pathfinder en los distintos escenarios que
 
 >TIP: Si ya tenemos levantado el entorno se puede ver directamente la configuración de los módulos de la plataforma en la sección: [Documentación de los módulos de Pathfinder](#doc_mod).
 
-#### Índice de contenido
+## Índice de contenido
 
 - [Requisitos](#requisitos)
 - [Estructura interna de la plataforma](#estr_interna)
@@ -68,7 +58,7 @@ A continuación se detallan los pasos de instalación teniendo como base un sist
 ### JDK 1.7
 El modulo web corre sobre Java Runtime Environment 7, y para compilar los binarios es necesario instalar Java Development Kit.
 
-#####Ubuntu (.deb y Derivados)
+###Ubuntu (.deb y Derivados)
 
 * Asegurarse que no se tiene openjdk instalado, en caso de tenerlo, es necesario removerlo
 
@@ -100,7 +90,7 @@ Java(TM) SE Runtime Environment (build 1.7.0_XX-ZXX)
 Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
 ```
 
-#####Red-Hat (.rpm y Dervivados)
+###Red-Hat (.rpm y Dervivados)
 
 * 64 Bits
 
@@ -163,7 +153,7 @@ El motor de busquedas Elasticsearch almacena todos los datos procesados por path
 
 > ADVERTENCIA: Se debe tener JDK 7 
 
-#####Ubuntu (.deb y derivados)
+###Ubuntu (.deb y derivados)
 
 * Descargar e instalar la "Public Signing Key": 
 
@@ -195,7 +185,7 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 	```
 
 
->####ADVERTENCIA
+>##ADVERTENCIA
 >Use el comando "echo" para agregar el repositorio de Elasticsearch. Elasticsearch no provee un repositorio de fuentes *no* utilice add-apt-repository ya que deberá ingresar una entrada para deb-src también.
 >Si lo hace verá el siguiente error
 >```
@@ -204,7 +194,7 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 >```
 
 
-#####Red-Hat (.rpm y derivados)::
+###Red-Hat (.rpm y derivados)::
 
 * Descargar e instalar la "Public Signing Key" 
 

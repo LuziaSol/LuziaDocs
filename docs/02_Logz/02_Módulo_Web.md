@@ -14,7 +14,7 @@ A continuación se explican las configuraciones para poder levantar y ejecutar c
 >Para poder configurar estos requisitos debería remitirse al [documento Principal](./Instalación_de_entorno#instalacion) de configuración
 
 
-#### Índice de contenido
+### Índice de contenido
 
 - [Configuración JBoss](#conf_web_jboss)
 - [Configuración Pathfinder](#conf_web_app)
