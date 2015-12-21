@@ -308,12 +308,12 @@ OS name: "linux", version: "[VERSION]", arch: "[ARCH]", family: "unix"
 
 <a name="layout"></a>
 ## Layout Físico General recomendado de la plataforma
-* [Arquitectura física](./layout.md)
+* [Arquitectura física](./Layout_Físico)
 
 
 <a name="doc_mod"></a>
 ## Documentación de los módulos de Pathfinder
 
-* [Módulo Web](./web.md)
-* [Módulo Analizador](./analyzer.md)
-* [Módulo Lector](./reader.md)
+* [Módulo Web](./Módulo_Web)
+* [Módulo Analizador](./Módulo_de_Análisis)
+* [Módulo Lector](./Módulo_de_Lectura)

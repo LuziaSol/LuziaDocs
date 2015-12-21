@@ -7,7 +7,7 @@ El lector de Pathfinder es el encargado de leer el archivo específico donde se 
 >
 >* JDK 1.7.x
 >
->Para poder configurar estos requisitos debería remitirse al [documento Principal](./install#instalacion) de configuración
+>Para poder configurar estos requisitos debería remitirse al [documento Principal](./Instalación_de_entorno#instalacion) de configuración
 
 
 #### Índice de contenido
