@@ -1,7 +1,7 @@
 Instalar Luzia Rulz usando docker
 
 
-# 1 Consideraciones para la instalación
+# Consideraciones para la instalación
 
 * Es necesario que los puertos 80 y 8080 estén disponibles para el despliegue de la aplicación. 
 
@@ -9,7 +9,7 @@ Instalar Luzia Rulz usando docker
 
 * Tener instalado wget.
 
-# 2 Instalar contenedor en linux
+# Instalar contenedor en linux
 
 ### 2.1 - Instalación de Rulz
 
@@ -28,7 +28,7 @@ $ sudo docker stop LuziaRulz12182015
 '''
 $ sudo docker start LuziaRulz12182015
 '''
-# 3 Instalar contenedor en mac
+# Instalar contenedor en mac
 
 ### 3.1 - Instalar wget, correr el comando en una terminal
 '''
