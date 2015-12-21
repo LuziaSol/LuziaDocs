@@ -1,5 +1,5 @@
-<a name="index"></a>
 # OBJETIVO y ESTRUCTURA
+----------------------------------
 
 Este documento se divide en 2 secciones: 
 
@@ -58,7 +58,7 @@ A continuación se detallan los pasos de instalación teniendo como base un sist
 ### JDK 1.7
 El modulo web corre sobre Java Runtime Environment 7, y para compilar los binarios es necesario instalar Java Development Kit.
 
-###Ubuntu (.deb y Derivados)
+### Ubuntu (.deb y Derivados)
 
 * Asegurarse que no se tiene openjdk instalado, en caso de tenerlo, es necesario removerlo
 
@@ -90,7 +90,7 @@ Java(TM) SE Runtime Environment (build 1.7.0_XX-ZXX)
 Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
 ```
 
-###Red-Hat (.rpm y Dervivados)
+### Red-Hat (.rpm y Dervivados)
 
 * 64 Bits
 
@@ -153,7 +153,7 @@ El motor de busquedas Elasticsearch almacena todos los datos procesados por path
 
 > ADVERTENCIA: Se debe tener JDK 7 
 
-###Ubuntu (.deb y derivados)
+### Ubuntu (.deb y derivados)
 
 * Descargar e instalar la "Public Signing Key": 
 
@@ -185,7 +185,7 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 	```
 
 
->##ADVERTENCIA
+>## ADVERTENCIA
 >Use el comando "echo" para agregar el repositorio de Elasticsearch. Elasticsearch no provee un repositorio de fuentes *no* utilice add-apt-repository ya que deberá ingresar una entrada para deb-src también.
 >Si lo hace verá el siguiente error
 >```
@@ -194,7 +194,7 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 >```
 
 
-###Red-Hat (.rpm y derivados)::
+### Red-Hat (.rpm y derivados)::
 
 * Descargar e instalar la "Public Signing Key" 
 
@@ -258,7 +258,7 @@ http://www.jboss.org/download-manager/file/jboss-eap-6.2.0.GA.zip
 ### Maven 3.x
 Apache Maven es el encargado de administrar todas las dependencias externas del proyecto para poder compilar los binarios.
 
->ADVERTENCIA Es necesario tener JDK 7 instalado
+>ADVERTENCIA: Es necesario tener JDK 7 instalado
 
 * Descargar los binarios de Maven de la siguiente URL
 

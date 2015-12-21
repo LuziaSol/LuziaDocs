@@ -1,4 +1,4 @@
-# Configración Módulo de Análisis de Pathfinder
+## Configración Módulo de Análisis de Pathfinder
 ------------------------------------------------
 
 El analizador de Pathfinder es una aplicación standalone que se comunica via servicios WEB REST. Es el encargado de consumir las reglas de correlación de eventos y generar un entorno de ejecución que en tiempo real recibe paquetes de eventos enviados luego de que se procesan en Pathfinder, ejecuta las reglas y devuelve los disparos resultantes.
@@ -17,7 +17,7 @@ El analizador de Pathfinder es una aplicación standalone que se comunica via se
 - [Configuración Pathfinder](#conf_an_app)
 
 <a name="conf_an_jboss"></a>
-# Configuración JBoss
+## Configuración JBoss
 Es necesario agregar parámetros al archivo de configuración de JBoss `standalone.xml` ubicado dentro del directorio `{JBOSS_INSTALL_DIR}/standalone/configuration` 
 
 * Ubicar el segmento "<hornetq-server>" y asegurarse que contenga el siguiente bloque de código
@@ -49,7 +49,7 @@ Es necesario agregar parámetros al archivo de configuración de JBoss `standalo
 ```
 
 <a name="conf_an_app"></a>
-# Configuración Pathfinder
+## Configuración Pathfinder
 Crear el archivo de configuración `pathfinder_analyzer_cep_properties` ubicado en el directorio `{JBOSS_INSTALL_DIR}/standalone/configuration` y agregar lo siguiente
 
 ```

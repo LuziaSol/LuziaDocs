@@ -1,4 +1,4 @@
-# Configración Módulo READER de Pathfinder
+## Configración Módulo READER de Pathfinder
 --------------------------------------------
 
 El lector de Pathfinder es el encargado de leer el archivo específico donde se almacenan los eventos en el equipo de orígen. También es el encargado de asegurarse que el evento no sea leído múltiples veces y de llevar el seguimiento del archivo de log en caso de que el mismo sea alterado (ej, rotación de tamaño)
@@ -21,7 +21,7 @@ El lector de Pathfinder es el encargado de leer el archivo específico donde se 
 
 
 <a name="configuracion_reader"></a>
-# Configuración del Agente Lector
+## Configuración del Agente Lector
 
 El lector se *auto configura* si se va a ejecutar en la misma máquina donde corre la aplicación, pero en general esto se hace en máquinas donde se almacenan los archivos de eventos que se leerán y enviarán a Pathfinder.
 
@@ -46,7 +46,7 @@ El directorio de ejecución se configura por parámetro de ejecución al correr 
 ```
 
 <a name="configuracion_app"></a>
-# Ejecución del Agente Lector
+## Ejecución del Agente Lector
 Como vimos anteriormente el agente puede ejecutarse directamente sin crear configuraciones si el mismo se ejecuta en el mismo servidor de Pathfinder. Vamos a proceder a detallar los dos métodos de ejecución.
 
 <a name="params"></a>

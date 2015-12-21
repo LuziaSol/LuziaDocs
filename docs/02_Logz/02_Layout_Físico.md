@@ -1,4 +1,4 @@
-# Layout Físico General 
+## Layout Físico General 
 ----------------------------------
 
 A continuación se describe el layout físico recomendado de la solución para alcanzar los siguientes objetivos.
@@ -9,7 +9,7 @@ A continuación se describe el layout físico recomendado de la solución para a
 * Que de acuerdo a las ultimas mediciones de performance se procesan aproximadamente 1.8Gb de información por día 
 * La solución representa una frontera de seguridad importante en donde es vital contar con el análisis de eventos en tiempo real por lo cual se debe garantizar un UP Time de 24hs X 7 días a la semana por 365 días al año
 
-# Diseño de alto nivel 
+## Diseño de alto nivel 
 
 La plataforma debe contar con al menos dos componentes: Un componente para alojar los servidores de aplicaciones y otro componente para el respositorio de datos. 
 
@@ -55,9 +55,9 @@ Para lograr el UPTIME propuesto es recomendable que sea al menos dos servidores.
 
 El repositorio de datos se divide en los siguientes nodos:
 
-###**MASTER**
+### **MASTER**
 Nodo que maneja todas las transacciones que solicitan datos, distribuye y balancea los datos que se almacenan en los nodos DATA. Necesita más capacidad de procesamiento que memoria RAM o capacidad de almacenamiento.
-###**DATA**
+### **DATA**
 Nodo que almacena datos y responde a requests de búsqueda de datos que realiza el nodo MASTER. También realiza todos los cacheos necesarios para disminuir el tiempo de respuesta. Necesita más memoria RAM y capacidad de almacenamiento que capacidad de procesamiento.
 
 >TIP: Un nodo MASTER/DATA necesitará mucha RAM y buena capacidad de procesamiento.
