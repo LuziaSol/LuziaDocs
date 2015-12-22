@@ -10,8 +10,8 @@
 
 #### Rulz
 
-* [Instalación rápida usando docker.](!Rulz/Instalacion_rapida_con_docker)
-* [Requisitos de hardware.](!Rulz/Requerimientos_de_hardware)
+* [Instalación rápida usando docker.](Rulz/Instalación_rápida_con_docker)
+* [Requisitos de hardware.](Rulz/Requerimientos_de_hardware)
 
 
 </div>
