@@ -1,4 +1,6 @@
-Instalar Luzia Rulz usando docker
+# Instalar Luzia Rulz usando docker
+----------------------------------
+Este documento contempla la instalación de toda la suite de LuziaRulz en un mismo contenedor, está concebido para que su instalación sea lo mas sencilla posible.
 
 
 ## 1- Consideraciones para la instalación
