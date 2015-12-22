@@ -15,7 +15,7 @@ Instalar Luzia Rulz usando docker
 
 Correr el siguiente comando en una terminal.
 ```
-wget -O - http://docker.luziasol.com:8080/install.mac.sh | sh
+wget -O - http://docker.luziasol.com:8080/install.linux.sh | sh
 ```
 ### 2.2 - Iniciar Detener
 
