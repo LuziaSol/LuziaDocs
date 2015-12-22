@@ -3,13 +3,13 @@
 
 Este documento se divide en 2 secciones: 
 
-1. **Configuración del entorno, compilación y ejecución de pathfinder** <br>
-Explica como levantar el entorno en el que se encuentra contenido pathfinder, las herramientas necesarias para compilarlo y ejecutarlo correctamente
-2. **Configuración de los módulos de Pathfinder:**<br>
-Explica como configurar correctamente Pathfinder en los distintos escenarios que se puedan plantear.
+1. **Configuración del entorno, compilación y ejecución de logz** <br>
+Explica como levantar el entorno en el que se encuentra contenido logz, las herramientas necesarias para compilarlo y ejecutarlo correctamente
+2. **Configuración de los módulos de Logz:**<br>
+Explica como configurar correctamente Logz en los distintos escenarios que se puedan plantear.
 
 
->TIP: Si ya tenemos levantado el entorno se puede ver directamente la configuración de los módulos de la plataforma en la sección: [Documentación de los módulos de Pathfinder](#doc_mod).
+>TIP: Si ya tenemos levantado el entorno se puede ver directamente la configuración de los módulos de la plataforma en la sección: [Documentación de los módulos de Logz](#doc_mod).
 
 ## Índice de contenido
 
@@ -21,7 +21,7 @@ Explica como configurar correctamente Pathfinder en los distintos escenarios que
 	- [Jboss EAP 6.2.1](#jboss)
 	- [Maven 3.x](#maven)
 - [Layout Físico General recomendado de la plataforma](#layout)
-- [Documentación de los módulos de Pathfinder](#doc_mod)
+- [Documentación de los módulos de Logz](#doc_mod)
 
 
 <a name="requisitos"></a>
@@ -41,11 +41,11 @@ A continuación se detalla la estructura interna de los archivos contenidos en e
 
 |Nombre|Descripción|
 |------|-------|
-|**api**|Módulo librería que contiene todas las interfaces, entidades, POJOs, DTOs y DVOs utilizados por Pathfinder|
+|**api**|Módulo librería que contiene todas las interfaces, entidades, POJOs, DTOs y DVOs utilizados por Logz|
 |**services**|Módulo librería que contiene todas las implementaciones de las interfaces declaradas en el módulo *api*|
-|**reader**|Módulo Standalone del Agente Pathfinder que lee un archivo de logs de eventos y los envía al servicio REST de pathfinder para su posterior procesado|
+|**reader**|Módulo Standalone del Agente Logz que lee un archivo de logs de eventos y los envía al servicio REST de logz para su posterior procesado|
 |**processor-engine**|Módulo del motor de procesamiento JavasCript|
-|**web**|Módulo WEB de pathfinder|
+|**web**|Módulo WEB de logz|
 |**analyzer-cep**|Módulo de Análisis de eventos|
 |**etc**|Directorio que contiene toda la documentación, librerías ad-hoc, y configuraciones adicionales de la Plataforma|
 |**pom.xml**|Descriptor MAVEN padre que agrupa todos los submódulos del proyecto|
@@ -149,7 +149,7 @@ Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
 
 <a name="elasticsearch"></a>
 ### Elasticsearch 1.7.3
-El motor de busquedas Elasticsearch almacena todos los datos procesados por pathfinder
+El motor de busquedas Elasticsearch almacena todos los datos procesados por logz
 
 > ADVERTENCIA: Se debe tener JDK 7 
 
@@ -302,7 +302,7 @@ OS name: "linux", version: "[VERSION]", arch: "[ARCH]", family: "unix"
 
 
 <a name="doc_mod"></a>
-## Documentación de los módulos de Pathfinder
+## Documentación de los módulos de Logz
 
 * [Módulo Web](./Módulo_Web)
 * [Módulo Analizador](./Módulo_de_Análisis)

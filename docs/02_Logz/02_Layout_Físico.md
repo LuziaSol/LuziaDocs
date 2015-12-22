@@ -39,7 +39,7 @@ Además es importante considerar que para lograr una mejor performance es recome
 Los discos de estado sólido son la mejor opción actualmente.
 
 
-# Requerimientos 
+## Requerimientos 
 
 A continuación se menciona una lista de recomendaciones para lograr un UPTIME de 24x7x365 en base a las características mencionadas.
 
