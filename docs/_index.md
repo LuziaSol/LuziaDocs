@@ -10,14 +10,19 @@
 
 #### Rulz
 
-* [Como instalar Rulz en un paso.](!Rulz/instalar_rulz_con_docker)
+* [Instalación rápida usando docker.](!Rulz/Instalacion_rapida_(con_docker))
+* [Requisitos de hardware.](!Rulz/Requerimientos_de_hardware)
 
 
 </div>
 <div class="col-sm-4">
 
 #### Logz
-
+* [Instalación de entorno.](!Logz/Instalación_de_entorno)
+* [Requisitos de hardware.](!Logz/Layout_Físico)
+* [Módulo de análisis.](!Logz/Módulo_de_Análisis)
+* [Módulo de lectura.](!Logz/Módulo_de_Lectura)
+* [Módulo web.](!Logz/Módulo_Web)
 
 </div>
 <div class="col-sm-4">
