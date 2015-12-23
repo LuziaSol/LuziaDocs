@@ -1,4 +1,4 @@
-## Configración Módulo READER de Logz
+# Configración Módulo READER de Logz
 --------------------------------------------
 
 El lector de Logz es el encargado de leer el archivo específico donde se almacenan los eventos en el equipo de orígen. También es el encargado de asegurarse que el evento no sea leído múltiples veces y de llevar el seguimiento del archivo de log en caso de que el mismo sea alterado (ej, rotación de tamaño)

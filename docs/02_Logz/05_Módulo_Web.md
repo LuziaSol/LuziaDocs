@@ -1,4 +1,4 @@
-## Configración Módulo WEB de Logz
+# Configración Módulo WEB de Logz
 -------------------------------------------
 
 El módulo web es la interfaz principal para la interacción con el la plataforma, a través de ella se realizan búsquedas de eventos, se cargan reglas, parsers para los eventos,etc. Este módulo también contiene la interfaz Web REST, a la que llegan los eventos enviados por el lector. <br>

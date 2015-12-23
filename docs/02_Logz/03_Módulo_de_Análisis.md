@@ -1,4 +1,4 @@
-## Configración Módulo de Análisis de Logz
+# Configración Módulo de Análisis de Logz
 ------------------------------------------------
 
 El analizador de Logz es una aplicación standalone que se comunica via servicios WEB REST. Es el encargado de consumir las reglas de correlación de eventos y generar un entorno de ejecución que en tiempo real recibe paquetes de eventos enviados luego de que se procesan en Logz, ejecuta las reglas y devuelve los disparos resultantes.

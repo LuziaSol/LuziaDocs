@@ -1,4 +1,4 @@
-## Layout Físico General 
+# Layout Físico General 
 ----------------------------------
 
 A continuación se describe el layout físico recomendado de la solución para alcanzar los siguientes objetivos.
