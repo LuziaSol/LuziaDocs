@@ -1,10 +1,12 @@
 
 <a name="instalacion"></a>
 ## Instalación del entorno
+
 A continuación se detallan los pasos de instalación teniendo como base un sistema linux.
 
 <a name="jdk"></a>
 ### JDK 1.7
+
 El modulo web corre sobre Java Runtime Environment 7, y para compilar los binarios es necesario instalar Java Development Kit.
 
 ### Ubuntu (.deb y Derivados)
@@ -98,6 +100,7 @@ Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
 
 <a name="elasticsearch"></a>
 ### Elasticsearch 1.7.3
+
 El motor de busquedas Elasticsearch almacena todos los datos procesados por logz
 
 > ADVERTENCIA: Se debe tener JDK 7 
@@ -135,6 +138,7 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 
 
 >## ADVERTENCIA
+>
 >Use el comando "echo" para agregar el repositorio de Elasticsearch. Elasticsearch no provee un repositorio de fuentes *no* utilice add-apt-repository ya que deberá ingresar una entrada para deb-src también.
 >Si lo hace verá el siguiente error
 >```
@@ -143,7 +147,7 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 >```
 
 
-### Red-Hat (.rpm y derivados)::
+### Red-Hat (.rpm y derivados)
 
 * Descargar e instalar la "Public Signing Key" 
 
