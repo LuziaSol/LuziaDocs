@@ -1,54 +1,3 @@
-# OBJETIVO y ESTRUCTURA
-----------------------------------
-
-Este documento se divide en 2 secciones: 
-
-1. **Configuración del entorno, compilación y ejecución de logz** <br>
-Explica como levantar el entorno en el que se encuentra contenido logz, las herramientas necesarias para compilarlo y ejecutarlo correctamente
-2. **Configuración de los módulos de Logz:**<br>
-Explica como configurar correctamente Logz en los distintos escenarios que se puedan plantear.
-
-
->TIP: Si ya tenemos levantado el entorno se puede ver directamente la configuración de los módulos de la plataforma en la sección: [Documentación de los módulos de Logz](#doc_mod).
-
-## Índice de contenido
-
-- [Requisitos](#requisitos)
-- [Estructura interna de la plataforma](#estr_interna)
-- [Instalación del entorno](#instalacion)
-	- [JDK 1.7](#jdk)
-	- [Elasticsearch 1.7.3](#elasticsearch)
-	- [Jboss EAP 6.2.1](#jboss)
-	- [Maven 3.x](#maven)
-- [Layout Físico General recomendado de la plataforma](#layout)
-- [Documentación de los módulos de Logz](#doc_mod)
-
-
-<a name="requisitos"></a>
-## Requisitos 
-
-A continuación se indican los componentes necesarios para poder ejecutar la aplicación:
-
-* JDK 1.7.x
-* JBoss 7.1.1 
-* Maven 3.0.4
-* Elasticsearch 1.7.3
-
-<a name="estr_interna"></a>
-## Estructura interna de la plataforma
-
-A continuación se detalla la estructura interna de los archivos contenidos en el repositorio
-
-|Nombre|Descripción|
-|------|-------|
-|**api**|Módulo librería que contiene todas las interfaces, entidades, POJOs, DTOs y DVOs utilizados por Logz|
-|**services**|Módulo librería que contiene todas las implementaciones de las interfaces declaradas en el módulo *api*|
-|**reader**|Módulo Standalone del Agente Logz que lee un archivo de logs de eventos y los envía al servicio REST de logz para su posterior procesado|
-|**processor-engine**|Módulo del motor de procesamiento JavasCript|
-|**web**|Módulo WEB de logz|
-|**analyzer-cep**|Módulo de Análisis de eventos|
-|**etc**|Directorio que contiene toda la documentación, librerías ad-hoc, y configuraciones adicionales de la Plataforma|
-|**pom.xml**|Descriptor MAVEN padre que agrupa todos los submódulos del proyecto|
 
 <a name="instalacion"></a>
 ## Instalación del entorno
@@ -296,14 +245,9 @@ Default locale: es_AR, platform encoding: UTF-8
 OS name: "linux", version: "[VERSION]", arch: "[ARCH]", family: "unix"
 ```
 
-<a name="layout"></a>
-## Layout Físico General recomendado de la plataforma
-* [Arquitectura física](./Layout_Físico)
+* Una vez instalado maven se deben agrear las librerías necesarias para poder compilar el proyecto
 
+```
+$ mvn install:install-file -Dfile={CLONED_LOGZ_REPO_DIR}/etc/libs/commons-io-2.5-SNAPSHOT.jar -DgroupId=commons-io -DartifactId=commons-io -Dversion=2.5-SNAPSHOT -Dpackaging=jar
+```
 
-<a name="doc_mod"></a>
-## Documentación de los módulos de Logz
-
-* [Módulo Web](./Módulo_Web)
-* [Módulo Analizador](./Módulo_de_Análisis)
-* [Módulo Lector](./Módulo_de_Lectura)
