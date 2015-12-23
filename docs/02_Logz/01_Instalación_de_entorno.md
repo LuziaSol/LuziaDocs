@@ -1,10 +1,10 @@
 
-<a name="instalacion"></a>
+<d1><a name="instalacion"></a></d1>
 ## Instalación del entorno
 
 A continuación se detallan los pasos de instalación teniendo como base un sistema linux.
 
-<a name="jdk"></a>
+<d1><a name="jdk"></a></d1>
 ### JDK 1.7
 
 El modulo web corre sobre Java Runtime Environment 7, y para compilar los binarios es necesario instalar Java Development Kit.
@@ -98,7 +98,7 @@ Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
  Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
 ```
 
-<a name="elasticsearch"></a>
+<d1><a name="elasticsearch"></a></d1>
 ### Elasticsearch 1.7.3
 
 El motor de busquedas Elasticsearch almacena todos los datos procesados por logz
@@ -194,7 +194,7 @@ Acceder desde el navegador a http://localhost:9200 y deberia retornar algo simil
 >http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup.html
 
 
-<a name="jboss"></a>
+<d1><a name="jboss"></a></d1>
 ### Jboss EAP 6.2.1
 El Servidor de aplicaciones certificado jee7 de redhat es el contenedor del módulo web
 
@@ -207,7 +207,7 @@ http://www.jboss.org/download-manager/file/jboss-eap-6.2.0.GA.zip
 
 >ADVERTENCIA: Necesita tener una cuenta registrada en el portal de Red Hat con el producto habilitado para la descarga
 
-<a name="maven"></a>
+<d1><a name="maven"></a></d1>
 ### Maven 3.x
 Apache Maven es el encargado de administrar todas las dependencias externas del proyecto para poder compilar los binarios.
 
