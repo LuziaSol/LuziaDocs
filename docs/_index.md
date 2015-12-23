@@ -13,6 +13,7 @@
 * [Instalación rápida usando docker.](Rulz/Instalación_rápida_con_docker)
 * [Instalación manual](Rulz/Instalacion_manual)
 * [Requisitos de hardware.](Rulz/Requerimientos_de_hardware)
+* [Instalación del Runtime](Rulz/Instalacion_Runtime)
 
 
 </div>
