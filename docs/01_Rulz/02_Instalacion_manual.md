@@ -1,22 +1,10 @@
-# Instalar Luzia Rulz
----------------------------------------------------------------------
+
 Este documento contempla la instalación de Luzia Rulz desde 0 a partir de los requerimientos basicos del sistema.
 
-## Indice
-1. [Requisitos Previos](#id-req-prev)
-  * [Python 2.7.x](#id-rp-python)
-  * [MongoDB](#id-rp-mongo)
-  * [Python DEV TOOLS](#id-rp-python-dev)
-  * [REDIS SERVER](#id-rp-redis)
-
-2. [Instalar](#id-inst)
 
 
-
-<div id='id-req-prev'/>
 ## 1 Requisitos previos:
 
-<div id='id-rp-python'/>
 ### 1.1 Python 2.7.x
 
   Antes de proceder con la instalación debe asegurarse que la versión de python que se está utilizando en el sistema sea mayor a la 2.7.1 y menor a la 3.0. Este chequeo puede realizarlo mediante la terminal del sistema ejecutando el siguiente comando:
@@ -27,7 +15,6 @@ Este documento contempla la instalación de Luzia Rulz desde 0 a partir de los r
 
   Este comando es válido tanto para sistemas Linux basados en Ubuntu como en RHEL.
 
-<div id='id-rp-mongo'/>
 ### 1.2 MongoDB > 2.6
 
   Si su sistema no posee instalada la base de datos “MongoDB”, deberá realizar la instalación de la misma para poder hacer uso de la aplicación. Usted puede comprobar si se encuentra instalada ejecutando el siguiente comando:
@@ -117,7 +104,6 @@ Este documento contempla la instalación de Luzia Rulz desde 0 a partir de los r
   $ sudo chkconfig mongod on
   ```
 
-<div id='id-212'/>
 ### 1.3 Python-dev tools
 
 ** En Debian/Ubuntu **
@@ -133,7 +119,6 @@ Este documento contempla la instalación de Luzia Rulz desde 0 a partir de los r
   ```
 
 
-<div id='id-rp-redis'/>
 ### 1.4 Redis-Server
 
   Es necesario que posee el servidor Redis instalado en su sistema. Realice el chequeo de esto mediante el siguiente comando:
@@ -166,7 +151,6 @@ Este documento contempla la instalación de Luzia Rulz desde 0 a partir de los r
   $ yum install redis
   ```
 
-<div id='id-inst'/>
 ## 2 Instalar:
 
 * Copiar los archivos fuente a /opt/LuziaRulz
