@@ -1,12 +1,14 @@
+# Entorno de ejecución
+------------------------------------------
 
-<d1><a name="instalacion"></a></d1>
+El entorno de ejecución solo comprende lo necesario para poder ejecutar la plataforma.
+
+<a name="instalacion"></a>
 ## Instalación del entorno
-
 A continuación se detallan los pasos de instalación teniendo como base un sistema linux.
 
-<d1><a name="jdk"></a></d1>
+<a name="jdk"></a>
 ### JDK 1.7
-
 El modulo web corre sobre Java Runtime Environment 7, y para compilar los binarios es necesario instalar Java Development Kit.
 
 ### Ubuntu (.deb y Derivados)
@@ -98,9 +100,8 @@ Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
  Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
 ```
 
-<d1><a name="elasticsearch"></a></d1>
+<a name="elasticsearch"></a>
 ### Elasticsearch 1.7.3
-
 El motor de busquedas Elasticsearch almacena todos los datos procesados por logz
 
 > ADVERTENCIA: Se debe tener JDK 7 
@@ -138,7 +139,6 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 
 
 >## ADVERTENCIA
->
 >Use el comando "echo" para agregar el repositorio de Elasticsearch. Elasticsearch no provee un repositorio de fuentes *no* utilice add-apt-repository ya que deberá ingresar una entrada para deb-src también.
 >Si lo hace verá el siguiente error
 >```
@@ -147,7 +147,7 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 >```
 
 
-### Red-Hat (.rpm y derivados)
+### Red-Hat (.rpm y derivados)::
 
 * Descargar e instalar la "Public Signing Key" 
 
@@ -194,7 +194,7 @@ Acceder desde el navegador a http://localhost:9200 y deberia retornar algo simil
 >http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup.html
 
 
-<d1><a name="jboss"></a></d1>
+<a name="jboss"></a>
 ### Jboss EAP 6.2.1
 El Servidor de aplicaciones certificado jee7 de redhat es el contenedor del módulo web
 
@@ -207,7 +207,7 @@ http://www.jboss.org/download-manager/file/jboss-eap-6.2.0.GA.zip
 
 >ADVERTENCIA: Necesita tener una cuenta registrada en el portal de Red Hat con el producto habilitado para la descarga
 
-<d1><a name="maven"></a></d1>
+<a name="maven"></a>
 ### Maven 3.x
 Apache Maven es el encargado de administrar todas las dependencias externas del proyecto para poder compilar los binarios.
 
@@ -255,3 +255,14 @@ OS name: "linux", version: "[VERSION]", arch: "[ARCH]", family: "unix"
 $ mvn install:install-file -Dfile={CLONED_LOGZ_REPO_DIR}/etc/libs/commons-io-2.5-SNAPSHOT.jar -DgroupId=commons-io -DartifactId=commons-io -Dversion=2.5-SNAPSHOT -Dpackaging=jar
 ```
 
+<a name="layout"></a>
+## Layout Físico General recomendado de la plataforma
+* [Arquitectura física](./Layout_Físico)
+
+
+<a name="doc_mod"></a>
+## Documentación de los módulos de Logz
+
+* [Módulo Web](./Módulo_Web)
+* [Módulo Analizador](./Módulo_de_Análisis)
+* [Módulo Lector](./Módulo_de_Lectura)
