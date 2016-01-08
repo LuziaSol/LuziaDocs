@@ -57,12 +57,12 @@ Pueden consultarse los eventos mediante la misma interfaz de servicios WEB y gen
 
 <a name="layout"></a>
 ## Layout Físico General recomendado de la plataforma
-* [Arquitectura física](./Layout_Físico)
+* [Arquitectura física](./Logz/Layout_Físico)
 
 
 <a name="doc_mod"></a>
 ## Documentación de los módulos de Logz
 
-* [Módulo Web](./Módulo_Web)
-* [Módulo Analizador](./Módulo_de_Análisis)
-* [Módulo Lector](./Módulo_de_Lectura)
+* [Módulo Web](./Logz/Módulo_Web)
+* [Módulo Analizador](./Logz/Módulo_de_Análisis)
+* [Módulo Lector](./Logz/Módulo_de_Lectura)
