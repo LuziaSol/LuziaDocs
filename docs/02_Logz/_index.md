@@ -13,11 +13,11 @@ Explica como configurar correctamente Logz en los distintos escenarios que se pu
 
 - [Requisitos](#requisitos)
 - [Estructura interna de la plataforma](#estr_interna)
-- [Instalación del entorno](./Instalación_de_entorno#instalacion)
-	- [JDK 1.7](./Instalación_de_entorno#jdk)
-	- [Elasticsearch 1.7.3](./Instalación_de_entorno#elasticsearch)
-	- [Jboss EAP 6.2.1](./Instalación_de_entorno#jboss)
-	- [Maven 3.x](./Instalación_de_entorno#maven)
+- [Instalación del entorno](./Logz/Instalación_de_entorno#instalacion)
+	- [JDK 1.7](./Logz/Instalación_de_entorno#jdk)
+	- [Elasticsearch 1.7.3](./Logz/Instalación_de_entorno#elasticsearch)
+	- [Jboss EAP 6.2.1](./Logz/Instalación_de_entorno#jboss)
+	- [Maven 3.x](./Logz/Instalación_de_entorno#maven)
 - [Layout Físico General recomendado de la plataforma](#layout)
 - [Documentación de los módulos de Logz](#doc_mod)
 
