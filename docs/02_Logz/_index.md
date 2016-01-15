@@ -18,6 +18,7 @@ Explica como configurar correctamente Logz en los distintos escenarios que se pu
 	- [Elasticsearch 1.7.3](./Logz/Instalación_de_entorno#elasticsearch)
 	- [Jboss EAP 6.2.1](./Logz/Instalación_de_entorno#jboss)
 	- [Maven 3.x](./Logz/Instalación_de_entorno#maven)
+	- [Git 1.9.1](./Logz/Instalación_de_entorno#git)
 - [Layout Físico General recomendado de la plataforma](#layout)
 - [Documentación de los módulos de Logz](#doc_mod)
 
@@ -31,6 +32,7 @@ A continuación se indican los componentes necesarios para poder ejecutar la apl
 * JBoss 7.1.1 
 * Maven 3.0.4
 * Elasticsearch 1.7.3
+* Git 1.9.1
 
 <a name="estr_interna"></a>
 ## Estructura interna de la plataforma

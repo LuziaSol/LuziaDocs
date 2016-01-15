@@ -60,8 +60,16 @@ Para iniciar o detener el contenedor de LuziaRulz se pueden utilizar los siguien
 ```
 $ docker start Logz
 ```
-#### 
-**Para detenerlo:**
+#### **Para detenerlo:**
 ```
 $ docker stop Logz
 ```
+#### **Para acceder:**
+
+Acceder mediante un navegador a [{SERVER_IP}:8080/logz] e ingresar las credenciales admin/admin (siendo SERVER_IP la ip del servidor donde se ha instalado)
+
+#### **Para enviar eventos:**
+
+Descargar agente de [http://docker.luziasol.com:8080/logz/logz-agent.jar] y remitirse a la documentación del Agente lector
+
+

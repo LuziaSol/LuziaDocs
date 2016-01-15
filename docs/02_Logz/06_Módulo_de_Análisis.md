@@ -20,13 +20,21 @@ El analizador de Logz es una aplicación standalone que se comunica via servicio
 ## Configuración JBoss
 Es necesario agregar parámetros al archivo de configuración de JBoss `standalone.xml` ubicado dentro del directorio `{JBOSS_INSTALL_DIR}/standalone/configuration` 
 
-* Ubicar el segmento "<hornetq-server>" y asegurarse que contenga el siguiente bloque de código
+* Ubicar el segmento `<hornetq-server>`, y dentro del mismo, el bloque `<jms-destinations>`, luego asegurarse que contenga la información necesaria (Ejemplificada a continuación). 
 
 ```XML
 <hornetq-server>
 ...
 	<jms-destinations>
-	...
+	...	        
+	    <jms-queue name="queue/Logz">
+	            <entry name="queue/Logz"/>
+	            <entry name="java:/jms/queue/Logz"/>
+	    </jms-queue>
+	    <jms-queue name="queue/Reprocess">
+               <entry name="java:/jms/queue/Reprocess"/>
+               <durable>false</durable>
+        </jms-queue>
 		<jms-queue name="queue/Alerts">
 			<entry name="java:/jms/queue/Alerts"/>
 			<durable>true</durable>

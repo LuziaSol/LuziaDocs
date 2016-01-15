@@ -35,7 +35,7 @@ $ sudo apt-get install oracle-java7-installer
 * Confirmar que la instalación ha sido exitosa
 
 ```
-$ java --version
+$ java -version
 
 Output:
 java version "1.7.0_XX"
@@ -43,7 +43,7 @@ Java(TM) SE Runtime Environment (build 1.7.0_XX-ZXX)
 Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
 ```
 
-### Red-Hat (.rpm y Dervivados)
+### Red-Hat (.rpm y derivados)
 
 * 64 Bits
 
@@ -93,7 +93,7 @@ Java HotSpot(TM) Server VM (build XX.XX-ZXX, mixed mode)
 * Confirmar que la instalación ha sido exitosa
 
 ```
- $ java --version
+ $ java -version
  Output:
  java version "1.7.0_XX"
  Java(TM) SE Runtime Environment (build 1.7.0_XX-ZXX)
@@ -127,11 +127,11 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 ```
 
 * Configurar como servicio
-	* Para sistemas con SysV init
+	* Para sistemas con SysV init (ubuntu 12+)
 	```
 	 $ sudo update-rc.d elasticsearch defaults 95 10
 	```
-	* Para sistemas si SysV init
+	* Para sistemas si SysV init (ubuntu 11-)
 	```
 	 $ sudo /bin/systemctl daemon-reload
 	 $ sudo /bin/systemctl enable elasticsearch.service
@@ -147,7 +147,7 @@ $ sudo apt-get update && sudo apt-get install elasticsearch
 >```
 
 
-### Red-Hat (.rpm y derivados)::
+### Red-Hat (.rpm y derivados)
 
 * Descargar e instalar la "Public Signing Key" 
 
@@ -202,7 +202,9 @@ El Servidor de aplicaciones certificado jee7 de redhat es el contenedor del mód
 
 http://www.jboss.org/download-manager/file/jboss-eap-6.2.0.GA.zip
 
-* Renombrar el archivo standalone.xml por standalone-bkp.xml y standalone-full-ha.xml por standalone.xml. 
+> TIP: Es necesario tener una cuenta jboss community para hacerlo
+
+* Renombrar el archivo standalone.xml por standalone-bkp.xml y standalone-full.xml por standalone.xml. 
 (Ambos archivos se encuentran localizados en <JBOSS_DIRECTORY>/standalone/configuration)
 
 >ADVERTENCIA: Necesita tener una cuenta registrada en el portal de Red Hat con el producto habilitado para la descarga
@@ -223,9 +225,14 @@ http://maven.apache.org/download.cgi (Se debe escoger un mirror y descargar los 
 
 ```
 $ sudo tar -xvzf apache-maven-3.X.X-bin.tar.gz
-$ sudo mv apache-maven-3.X.X-bin /usr/local/apache-maven/
-$ sudo ln -s /usr/local/apache-maven/apache-maven-3.X.X-bin /usr/local/apache-maven/apache-default
+$ sudo mv apache-maven-3.X.X-bin /usr/local/apache-maven/ 
+$ sudo ln -s /usr/local/apache-maven/apache-maven-3.X.X-bin /usr/local/apache-maven/maven-default
 ```
+
+> TIPS: 
+> * Al descomprimir el archivo `apache-maven-3.X.X-bin.tar.gz` es posible que el directorio creado se llame diferente a `apache-maven-3.X.X-bin`
+> * Se debe copiar el directorio entero a `/usr/local/apache-maven/` y no solo su contenido, quedando maven en el siguiente path absoluto `/usr/local/apache-maven/apache-maven-3.X.X-bin`
+
 
 * Configurar las variables de entorno para encontrar los ejecutables correctos
 
@@ -249,11 +256,26 @@ Default locale: es_AR, platform encoding: UTF-8
 OS name: "linux", version: "[VERSION]", arch: "[ARCH]", family: "unix"
 ```
 
-* Una vez instalado maven se deben agrear las librerías necesarias para poder compilar el proyecto
+* Una vez instalado maven se deben agrear las librerías necesarias para poder compilar el proyecto para esto será necesario descargar la librería y agregarla al repositorio maven local
 
 ```
-$ mvn install:install-file -Dfile={CLONED_LOGZ_REPO_DIR}/etc/libs/commons-io-2.5-SNAPSHOT.jar -DgroupId=commons-io -DartifactId=commons-io -Dversion=2.5-SNAPSHOT -Dpackaging=jar
+$ wget http://docker.luziasol.com:8080/logz/commons-io-2.5-SNAPSHOT.jar 
+$ mvn install:install-file -Dfile=commons-io-2.5-SNAPSHOT.jar -DgroupId=commons-io -DartifactId=commons-io -Dversion=2.5-SNAPSHOT -Dpackaging=jar
 ```
+
+<a name="git"></a>
+### Git 1.9.1
+Es necesario instalar el sistema de manejo de código fuente (SCM) GIT para poder descargar el proyecto.
+
+### Ubuntu (.deb y derivados)
+
+	$ sudo apt-get install git	
+
+### Red-Hat (.rpm y derivados)
+
+	$ yum install git
+
+> ADVERTENCIA: Es necesario tener el paquete activado para descargar GIT via YUM.
 
 <a name="layout"></a>
 ## Layout Físico General recomendado de la plataforma
