@@ -10,7 +10,7 @@ A continuación se explican las configuraciones para poder levantar y ejecutar c
 >* Elasticsearch 1.7.3
 >* JBoss 6.2
 >* Maven 3+
->* GIT 3+
+>* GIT 1.9+
 >
 >Para poder configurar estos requisitos debería remitirse al [documento Principal](./Instalación_de_entorno#instalacion) de configuración
 
@@ -18,15 +18,25 @@ A continuación se explican las configuraciones para poder levantar y ejecutar c
 ### Índice de contenido
 
 - [Clonado de Proyecto](#clone)
+- [Compilado de Proyecto](#compile)
 - [Configuración JBoss](#conf_web_jboss)
 - [Configuración Logz](#conf_web_app)
-
+- [Despliegue de binarios](#deploy)
+- [Inicio de Jboss](#start)
 
 <a name="clone"></a>
 # Clonado de Proyecto
 A continuación se detallan los pasos para descargar y clonar el repositorio con los fuentes para compilar el proyecto completo
 
+	$ cd /opt 
 	$ git clone https://github.com/LuziaSol/Logz
+
+<a name="compile"></a>
+# Compilado de proyecto
+A continuación se detallan los pasos para compilar los fuentes del proyecto clonado anteriormente
+
+	$ cd Logz
+	$ mvn clean install
 
 <a name="conf_web_jboss"></a>
 # Configuración JBoss
@@ -128,7 +138,7 @@ Ubicar el segmento `<interfaces>` y dentro del mismo modificar el que tiene el n
 		    <smtp-server outbound-socket-binding-ref="mail-smtp"/>
 		</mail-session>
 		-->
-		<!-- SERVIDOR SMTP GMAIL
+		<!-- SERVIDOR SMTP GMAIL -->
 		<mail-session jndi-name="java:jboss/mail/Logz">
 		    <smtp-server ssl="true" outbound-socket-binding-ref="gmail-smtp">
 		        <login name="user@gmail.com" password="pass"/>
@@ -207,7 +217,18 @@ ldap.security.roles.baseDN = ou\=roles,ou\=logz,dc\=cuyum,dc\=com (Nombre de dom
 #ldap.security.domain.name = cuyum.com (Nombre de dominio base)
 ```
 
-> ADVERTENCIA: __**Configurar el nombre del cluster en ElasticSearch en su archivo de configuración correspondiente**__ (`{ELASTICSEARCH_INSTALL_DIR}/elasticsearch.yml`) o configurar el archivo `logz_config.properties` con el correspondiente
+> ADVERTENCIA: __**Configurar el nombre del cluster en ElasticSearch en su archivo de configuración correspondiente**__ (`{ELASTICSEARCH_INSTALL_DIR}/elasticsearch.yml`) 
+> o configurar el archivo `logz_config.properties` con el correspondiente
 
+<a name="deploy"></a>
+# Despliegue de binarios
+A continuación se detalla como copiar los binarios previamente compilados al servidor Jboss
 
+	$ cp /opt/Logz/web/target/logz.war /opt/Logz/analyzer-cep/target/analyzer-cep.war /opt/Logz/health/target/logz-health.war /opt/jboss-eap-6.2.0/standalone/deployments/
+
+<a name="start"></a>
+# Inicio de Jboss
+Una vez copiado los binarios y configurado todo el entorno, es necesario iniciar el Servidor de Aplicaciones JBoss
+
+	$ sh /opt/jboss-eap-6.2.0/bin/standalone.sh
 

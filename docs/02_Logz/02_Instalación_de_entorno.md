@@ -202,6 +202,16 @@ El Servidor de aplicaciones certificado jee7 de redhat es el contenedor del mód
 
 http://www.jboss.org/download-manager/file/jboss-eap-6.2.0.GA.zip
 
+* Descomprimir zip
+
+	$ unzip jboss-eap-6.2.0.GA.zip
+
+* Mover JBoss al directorio `/opt/`
+
+	$ mv jboss-eap-6.2.0 /opt/
+
+> ADVERTENCIA: es necesario contar con el comando `unzip` en el sistema pero se puede descomprimir de la manera que el usuario elija
+
 > TIP: Es necesario tener una cuenta jboss community para hacerlo
 
 * Renombrar el archivo standalone.xml por standalone-bkp.xml y standalone-full.xml por standalone.xml. 
