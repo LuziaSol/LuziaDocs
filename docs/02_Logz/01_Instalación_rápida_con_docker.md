@@ -1,9 +1,11 @@
-# Instalar Luzia Rulz usando docker
+# Instalar Luzia Logz usando docker
 ----------------------------------
-Este documento contempla la instalación de toda la suite de LuziaRulz en un mismo contenedor, está concebido para que su instalación sea lo mas sencilla posible.
+Este documento contempla la instalación de toda la plataforma de Logz en un mismo contenedor, está concebido para que su instalación sea lo mas sencilla posible a modo de demostración. __No es recomendable usar esta instalación para futuros ambientes productivos__.
 
 
 ## 1- Consideraciones para la instalación
+
+* Es necesario disponer de 2GB de RAM en la máquina donde se instalará la Virtual Machine de docker.
 
 * Es necesario que los puertos 80 y 8080 estén disponibles para el despliegue de la aplicación. 
 
@@ -13,22 +15,22 @@ Este documento contempla la instalación de toda la suite de LuziaRulz en un mis
 
 ## 2- Instalar contenedor en linux
 
-### 2.1 - Instalación de Rulz
+### 2.1 - Instalación de Logz
 
 Correr el siguiente comando en una terminal.
 ```
-wget -O - http://docker.luziasol.com:8080/rulz/install.linux.sh | sh
+wget -O - http://docker.luziasol.com:8080/logz/install.linux.sh | sh
 ```
 ### 2.2 - Iniciar Detener
 
 #### **Para iniciarlo:**
 ```
-sudo docker start LuziaRulz12182015
+sudo docker start Logz
 ```
 #### 
 **Para detenerlo**
 ```
-sudo docker stop LuziaRulz12182015
+sudo docker stop Logz
 ```
 3- Instalar contenedor en mac
 ======
@@ -44,11 +46,11 @@ $ brew install wget
 
 [https://github.com/docker/toolbox/releases/download/v1.9.1e/DockerToolbox-1.9.1e.pkg](https://github.com/docker/toolbox/releases/download/v1.9.1e/DockerToolbox-1.9.1e.pkg)
 
-### 3.3 - Instalación de Rulz
+### 3.3 - Instalación de Logz
 
 Correr el siguiente comando en una "**Docker Quickstart Terminal**"
 ```
-$ wget -O - http://docker.luziasol.com:8080/rulz/install.mac.sh | sh
+$ wget -O - http://docker.luziasol.com:8080/logz/install.mac.sh | sh
 ```
 ### 3.4 - Iniciar / Detener
 
@@ -56,10 +58,10 @@ Para iniciar o detener el contenedor de LuziaRulz se pueden utilizar los siguien
 
 #### **Para iniciarlo:**
 ```
-$ docker start LuziaRulz12182015
+$ docker start Logz
 ```
 #### 
 **Para detenerlo:**
 ```
-$ docker stop LuziaRulz12182015
+$ docker stop Logz
 ```

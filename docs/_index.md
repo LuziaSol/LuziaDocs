@@ -20,6 +20,7 @@
 <div class="col-sm-4">
 
 #### Logz
+* [Instalación rápida usando docker.](Logz/Instalación_rápida_con_docker)
 * [Instalación de entorno.](Logz/Instalación_de_entorno)
 * [Requisitos de hardware.](Logz/Layout_Físico)
 * [Módulo de análisis.](Logz/Módulo_de_Análisis)
